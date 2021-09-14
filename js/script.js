@@ -282,7 +282,30 @@ function analyzeStorage(){
         }
 
     });
+
+    const productsTitles = document.querySelectorAll(".produkts__item-title"),
+        jobTitles = document.querySelectorAll(".job__item-title");
+    
+        removeNotExistItems(productsTitles);
+        removeNotExistItems(jobTitles);
 }
+
+function removeNotExistItems(titles){
+    let keys = Object.keys(localStorage);
+
+    keys.forEach((key) => {
+        let yes = false;
+        titles.forEach((title) => {
+            if(title.textContent == key){
+                yes = true;
+            }
+        });
+        if(!yes){
+            localStorage.removeItem(key);
+        }
+    });
+}
+
 function renderCart(wrapperSelector){
     let keys = Object.keys(localStorage),
         len = keys.length;
