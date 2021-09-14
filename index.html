@@ -344,7 +344,7 @@
     </section>
 
     <section class="tariffs">
-        <div class="container">
+        <div class="container tariffs-container">
             <h2 class="tariffs__title" data-aos="fade-up">
                 Виберіть свій тариф
             </h2>
@@ -354,13 +354,13 @@
             </h3>
 
             <ul class="tariffs__types" data-aos="fade-up" data-aos-delay="200">
-                <li data-filter="*" class="filter-active">Всі</li>
-                <li data-filter=".filter-gepon">GEPON</li>
-                <li data-filter=".filter-wifi">Wi-Fi</li>
+                <li data-type="*" class="type-active">Всі</li>
+                <li data-type=".type-gepon">GEPON</li>
+                <li data-type=".type-wifi">Wi-Fi</li>
             </ul>
 
             <div class="tariffs__wrapper" data-aos="fade-up" data-aos-delay="250">
-                <div class="tariffs__item filter-gepon">
+                <div class="tariffs__item type-gepon">
                     <h4 class="tariffs__item-title">
                         Ілон
                     </h4>
@@ -375,7 +375,7 @@
                     </div>
                     <a data-order class="btn btn__choose" data-type-in="order">Замовити</a>
                 </div>
-                <div class="tariffs__item filter-gepon">
+                <div class="tariffs__item type-gepon">
                     <h4 class="tariffs__item-title">
                         Ілон
                     </h4>
@@ -390,7 +390,7 @@
                     </div>
                     <a data-order class="btn btn__choose" data-type-in="order">Замовити</a>
                 </div>
-                <div class="tariffs__item filter-wifi">
+                <div class="tariffs__item type-wifi">
                     <h4 class="tariffs__item-title">
                         Ілон
                     </h4>
@@ -427,14 +427,14 @@
            </div>
 
             <ul class="job__types" data-aos="fade-up" data-aos-delay="400">
-                <li data-filter="*" class="filter-active">Всі</li>
-                <li data-filter=".filter-network">Інтернет</li>
-                <li data-filter=".filter-instalation">Інсталяція</li>
-                <li data-filter=".filter-assembling">Монтаж</li>
+                <li data-type="*" class="type-active">Всі</li>
+                <li data-type=".type-network">Інтернет</li>
+                <li data-type=".type-instalation">Інсталяція</li>
+                <li data-type=".type-assembling">Монтаж</li>
             </ul>
 
             <div class="job__wrapper" data-aos="fade-up" data-aos-delay="750">
-                <div class="job__item filter-network">
+                <div class="job__item type-network">
                     <div class="job__layer">
                         <div class="job__item-face job__item-front">
                             <img src="image/router.png" alt="image" class="job__item-image">
@@ -466,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="job__item filter-instalation">
+                <div class="job__item type-instalation">
                     <div class="job__layer">
                         <div class="job__item-face job__item-front">
                             <img src="image/router.png" alt="image" class="job__item-image">
@@ -498,7 +498,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="job__item filter-network">
+                <div class="job__item type-network">
                     <div class="job__layer">
                         <div class="job__item-face job__item-front">
                             <img src="image/router.png" alt="image" class="job__item-image">
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="job__item filter-network">
+                <div class="job__item type-network">
                     <div class="job__layer">
                         <div class="job__item-face job__item-front">
                             <img src="image/router.png" alt="image" class="job__item-image">
@@ -584,15 +584,15 @@
            </div>
 
             <ul class="produkts__types" data-aos="fade-up" data-aos-delay="400">
-                <li data-filter="*" class="filter-active">Всі</li>
-                <li data-filter=".filter-wifi">Wifi Роутери та Адаптери</li>
-                <li data-filter=".filter-tv">ТВ-обладнання</li>
-                <li data-filter=".filter-cable">Кабель</li>
-                <li data-filter=".filter-other">Інше</li>
+                <li data-type="*" class="type-active">Всі</li>
+                <li data-type=".type-wifi">Wifi Роутери та Адаптери</li>
+                <li data-type=".type-tv">ТВ-обладнання</li>
+                <li data-type=".type-cable">Кабель</li>
+                <li data-type=".type-other">Інше</li>
             </ul>
 
             <div class="produkts__wrapper" data-aos="fade-up" data-aos-delay="750">
-                <div class="produkts__item filter-wifi">
+                <div class="produkts__item type-wifi">
                     <div class="produkts__layer">
                         <div class="produkts__item-face produkts__item-front">
                             <img src="image/router.png" alt="image" class="produkts__item-image">
@@ -624,7 +624,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="produkts__item filter-wifi">
+                <div class="produkts__item type-wifi">
                     <div class="produkts__layer">
                         <div class="produkts__item-face produkts__item-front">
                             <img src="image/router.png" alt="image" class="produkts__item-image">
@@ -656,7 +656,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="produkts__item filter-tv">
+                <div class="produkts__item type-tv">
                     <div class="produkts__layer">
                         <div class="produkts__item-face produkts__item-front">
                             <img src="image/router.png" alt="image" class="produkts__item-image">
@@ -688,7 +688,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="produkts__item filter-cable">
+                <div class="produkts__item type-cable">
                     <div class="produkts__layer">
                         <div class="produkts__item-face produkts__item-front">
                             <img src="image/router.png" alt="image" class="produkts__item-image">
@@ -720,7 +720,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="produkts__item filter-other">
+                <div class="produkts__item type-other">
                     <div class="produkts__layer">
                         <div class="produkts__item-face produkts__item-front">
                             <img src="image/router.png" alt="image" class="produkts__item-image">

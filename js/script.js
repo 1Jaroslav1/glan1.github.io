@@ -180,7 +180,7 @@ function slider({container, slide, nextArrow, prevArrow, wrapper, field}) {
 
 //Tabs
 
-function tabs(tab_container, tab_item, layout_mode, ul_selector, active_class){
+function tabs(tab_container, tab_item, layout_mode, ul_selector, active_class, filterBy){
     const portfolioContainer = document.querySelector(tab_container)
     if (portfolioContainer) {
         let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -201,7 +201,7 @@ function tabs(tab_container, tab_item, layout_mode, ul_selector, active_class){
                 });
                 e.target.classList.add(active_class);
                 portfolioIsotope.arrange({
-                    filter: e.target.getAttribute('data-filter')
+                    filter: e.target.getAttribute(filterBy)
                 });
                 // portfolioIsotope.on('arrangeComplete', function() {
                 //     AOS.refresh()
@@ -401,7 +401,8 @@ window.addEventListener('load', () =>{
         '.tariffs__item',
         'fitRows',
         '.tariffs__types li',
-        'filter-active'
+        'type-active',
+        'data-type'
     );
 
     tabs(
@@ -409,7 +410,8 @@ window.addEventListener('load', () =>{
         '.job__item',
         'fitRows',
         '.job__types li',
-        'filter-active'
+        'type-active',
+        'data-type'
     );
 
     tabs(
@@ -417,7 +419,8 @@ window.addEventListener('load', () =>{
         '.produkts__item',
         'fitRows',
         '.produkts__types li',
-        'filter-active'
+        'type-active',
+        'data-type'
     );
 });
 window.addEventListener('scroll', function(){
