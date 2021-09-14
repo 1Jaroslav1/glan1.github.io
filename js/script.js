@@ -43,7 +43,7 @@ function clickBars(navSelector, navItemsSelector, barsSelector){
 
 function headerAddScrolled(){
     const header = document.querySelector('.header');
-    if (window.scrollY > 50) {
+    if (window.scrollY > 1) {
         header.classList.add('header-scrolled');
     }
     else{
