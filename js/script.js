@@ -11,12 +11,6 @@ function addActiveNav(navItemsSelector){
                 });
                 e.target.classList.add('active');
             }
-            // if(!e.target.classList.contains("fas"))
-            //     e.target.classList.add('active');
-            // else{
-            //     let parent = e.target.parentNode;
-            //     parent.classList.add('active');
-            // }
         });
     });
 }
@@ -43,7 +37,7 @@ function clickBars(navSelector, navItemsSelector, barsSelector){
 
 function headerAddScrolled(){
     const header = document.querySelector('.header');
-    if (window.scrollY > 1) {
+    if (window.scrollY > 0) {
         header.classList.add('header-scrolled');
     }
     else{
@@ -383,9 +377,9 @@ function cardFlip(cardItemSelector, cardBtnClass){
         
     cardItems.forEach((cardItem) => {
         cardItem.addEventListener('click', (e)=>{
-            console.log(e.target);
+            console.log(e.target.className);
             const targetParent = e.target.parentNode;
-            if(!targetParent.classList.contains(cardBtnClass) && e.target.className != cardBtnClass){
+            if(!targetParent.classList.contains(cardBtnClass) && e.target.className != cardBtnClass && e.target.className != cardBtnClass + " clicked"){
                 cardItem.classList.toggle("is-flipped");
             }
         });
